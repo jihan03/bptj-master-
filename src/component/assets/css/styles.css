@@ -1,0 +1,477 @@
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.navbar-default {
+  background-color: #FFF;
+  margin-left: 230px;
+}
+
+/*main side bar*/
+.msb {
+  width: 230px;
+  background-color: #333333;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 100%;
+  z-index: 1;
+  border-right: 1px solid #ddd;
+}
+.msb .navbar {
+  border: none;
+  margin-left: 0;
+  background-color: inherit;
+}
+.msb .navbar-header {
+  width: 100%;
+  height: 81px;
+  border-bottom: 1px solid #e7e7e7;
+  background: #202056;
+    
+}
+.msb .dashboard h4, a{
+    color: white;
+}
+.mnb .navbar-header a{
+    color: #202056;
+}
+.msb .navbar-nav li {
+  display: block;
+  width: 100%;
+}
+
+
+.dashboard h4{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+.navbar-nav li:hover{
+    color: orange;
+}
+/* Style the sidenav links and the dropdown button */
+.side-menu-container a, .dropdown-btn {
+  padding: 10px 10px 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dropdown-container li {
+  padding: 5px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+
+.dashboard h4{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.side-menu-container li{
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu-container h4{
+        color: white;
+}
+
+.side-menu-container button{
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu-container li:hover{
+    background: #202056;
+    text-decoration: none;
+}
+
+.side-menu-container h4:hover{
+        color: white;
+}
+
+.side-menu-container button:hover{
+    background: #202056;
+    text-decoration: none;
+    color: white;
+}
+/*main content wrapper*/
+.mcw {
+  margin-left: 230px;
+  position: relative;
+  min-height: 100%;
+  /*content view*/
+}
+
+.mcw .atas {
+    
+    padding: 0;
+    height: 200px;
+    position: relative;
+    border-radius: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+ 
+}
+
+.atas h3{
+    padding: 30px 40px;
+    color: white;
+    padding: 30px ;
+    padding-bottom: 10px;
+}
+.atas a{
+  text-decoration: none;
+}
+.atas i.home{
+  margin-left: 40px;
+  color: white;
+}
+.atas span{
+  color: white;
+}
+.search-dashboard {
+      margin: 30px;
+}
+.grey-box{
+    background-color: #f2f2f2;
+    padding: 70px 70px;
+}
+.grey-box h4{
+    margin: 0;
+    font-size: 25px;
+    color: #202056;
+}
+.grey-box p{
+    font-size: 19px;
+}
+.grey-box hr{
+    margin: 10px 0 30px 0;
+    width: 60px;
+    height: 0;
+    border: 2px solid #202056;
+}
+.white-box{
+    background-color: white;
+    padding: 50px 70px;
+}
+.white-box h4{
+    font-size: 25px;
+}
+
+
+.bawah{
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 100%;
+    padding: 60px 40px;
+}
+.bawah h4{
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 20px;
+}
+.bawah a{
+    font-size: 18px;
+    color: black;
+}
+.bawah a:hover{
+    font-size: 18px;
+    color: orange;
+}
+
+
+.footer{
+    background-image: url(../img/footer.png);
+    width: 100%;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer p{
+    margin: 0;
+    padding: 20px;
+    color: white;
+    font-size: 13px;
+}
+/*globals*/
+
+.msb{
+  -moz-animation: slidein 300ms forwards;
+  -o-animation: slidein 300ms forwards;
+  -webkit-animation: slidein 300ms forwards;
+  animation: slidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.mcw {
+  -moz-animation: bodyslidein 300ms forwards;
+  -o-animation: bodyslidein 300ms forwards;
+  -webkit-animation: bodyslidein 300ms forwards;
+  animation: bodyslidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+body.msb-x .mcw, body.msb-x .mnb {
+  margin-left: 0;
+  -moz-animation: bodyslideout 300ms forwards;
+  -o-animation: bodyslideout 300ms forwards;
+  -webkit-animation: bodyslideout 300ms forwards;
+  animation: bodyslideout 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+body.msb-x .msb {
+  -moz-animation: slideout 300ms forwards;
+  -o-animation: slideout 300ms forwards;
+  -webkit-animation: slideout 300ms forwards;
+  animation: slideout 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* Slide in animation */
+@-moz-keyframes slidein {
+  0% {
+    left: -230px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    left: -230px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    left: -230px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -230px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -230px;
+  }
+}
+@keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -230px;
+  }
+}
+@-moz-keyframes bodyslidein {
+  0% {
+    left: 0;
+  }
+  100% {
+    margin-left: 230px;
+  }
+}
+@-webkit-keyframes bodyslidein {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes bodyslidein {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 230px;
+  }
+}
+@-moz-keyframes bodyslideout {
+  0% {
+    margin-left: 230px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@-webkit-keyframes bodyslideout {
+  0% {
+    margin-left: 230px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes bodyslideout {
+  0% {
+    margin-left: 230px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+/*FORM */
+
+.wrapper{
+  background-color: #e7e2e2;
+}
+.row{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.red{
+  color: red;
+}
+
+.input-dashboard{
+  padding: 30px 20px 0px;
+}
+
+/*Form*/
+.input-dashboard .info-dashboard .head-title{
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.input-dashboard .info-dashboard .section{
+  background-color: #ffffff;
+}
+.input-dashboard .info-dashboard .section .section-head{
+  padding: 20px 30px;
+  background-color: #202156;
+  border-bottom: 2px solid #0d0d48;
+  color: #ffffff;
+  margin-top: 20px;
+
+}
+.input-dashboard .info-dashboard .section .section-head h4{
+  margin: 0px;
+  font-weight: 500;
+}
+.input-dashboard .info-dashboard .section .section-head h4 a{
+  color: #a2abb3;
+  float: right;
+  font-size: 20px;
+}
+.input-dashboard .info-dashboard .col-md-6{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.input-dashboard .info-dashboard .isi-form{
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.input-dashboard .info-dashboard .isi-form .form button.kode_trayek{
+  width: 25%px;
+  height: 60px;
+  border: none;
+  color: #ffffff;
+  background: #ffb637;
+  padding: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+.input-dashboard .info-dashboard .isi-form input{
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input-dashboard .info-dashboard .isi-form input[type="number"]{
+  width: 25%;
+}
+.input-dashboard .info-dashboard .isi-form input[type="date"]{
+  width:30%;
+}
+.input-dashboard .info-dashboard .isi-form span.label-upload{
+  position: relative;
+}
+.input-dashboard .info-dashboard .isi-form .form label{
+  font-weight: 600;
+}
+.input-dashboard .info-dashboard .isi-form .upload-btn-wrapper button.btn-upload{
+  color: #333333;
+  background-color: #c5c5c5;
+  border: none;
+  border-radius: 0px;
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.input-dashboard .info-dashboard .isi-form .upload-btn-wrapper button.btn-upload:hover{
+  background: #ffb637;
+}
+
+.input-dashboard .info-dashboard .submit-form{
+  margin-bottom: 40px;
+}
+.input-dashboard .info-dashboard .submit-form button{
+  width: 90%;
+  border: none;
+  color: #492d2d;
+  background: #c5c5c5;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.input-dashboard .info-dashboard .submit-form button.btn-submit{
+  background: #ffb619;
+  color: #333333;
+  float: right;
+}
+.input-dashboard .info-dashboard .submit-form button.btn-submit:hover{
+  background: #c5c5c5;
+}
+
+/*FORM*/
